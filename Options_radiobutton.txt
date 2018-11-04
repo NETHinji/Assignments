@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type"  charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form>
+        <input type="radio" onchange="on(0)" value="on" id="0" />UG
+        <input type="radio" onchange="on(1)" value="off" id="1" />PG
+        <select id="options">
+
+
+        </select>
+    </form>
+    <script type="text/javascript">
+        function on(type) {
+            document.getElementById('options').innerHTML = type ? '<option>BCA</option><option>BBA</option><option>BTECH</option>' : '<option>MBA</option><option>BBA</option><option>MTECH</option>';
+            if (type == 0)
+                document.getElementById('1').checked = false;
+            else
+                document.getElementById('0').checked = false;
+        }
+    </script>
+</body>
+</html>
